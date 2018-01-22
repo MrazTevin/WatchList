@@ -10,3 +10,7 @@ def index():
     '''
     message = 'Hello World'
     return render_template('index.html', message=message)
+
+
+@app.route('/movie/<movie_id>')
+def movie(movie_id):
