@@ -1,5 +1,7 @@
-from flask import Flask
-# intializing application
-from app import views
 
+from flask import Flask
+# initializing application
 app = Flask(__name__)
+
+
+from app import views
