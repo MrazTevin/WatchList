@@ -4,6 +4,9 @@ import json
 from .models import movie
 
 Movie = movie.Movie
+
+
+Movie = movie.Movie
 # getting api api_key
 api_key = app.config['MOVIE_API_KEY']
 
