@@ -8,8 +8,11 @@
     <title> Welcome to the best Movie Review Website</title>
     {% endif %}
   </head>
+  {% extends 'base.html'%}
   {% import 'macros.html' as macro %}
     <body>
+      <!--Content block-->
+    {% block content %}
     <!-- Popular movie section -->
     <h3>Popular Movies</h3>
       <ul>
@@ -25,5 +28,6 @@
       <ul>
          {{ macro.displayMovieList(now_showing)}}
       </ul>
+    {% endblock %}
   </body>
 </html>
