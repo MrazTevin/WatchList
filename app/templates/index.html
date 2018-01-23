@@ -11,11 +11,24 @@
   <body>
     <!-- Popular movie section -->
     <h3>Popular Movies</h3>
-    <ul>
+      <ul>
       {% for popular_movie in popular %}
          <li>{{popular_movie.title}}</li>
       {% endfor %}
-    </ul>
-
+      </ul>
+    <!--Upcoming Movie-->
+    <h3>Upcoming Movies</h3>
+      <ul>
+      {% for upcoming_movie in upcoming %}
+        <li>{{upcoming_movie.title}}</li>
+      {% endfor %}
+      </ul>
+    <!--Now showing Movie-->
+    <h3>Now Showing</h3>
+      <ul>
+        {% for now_showing_movie in now_showing %}
+           <li>{{now_showing_movie.title}}</li>
+        {% endfor %}
+      </ul>
   </body>
 </html>
