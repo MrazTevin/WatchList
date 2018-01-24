@@ -2,6 +2,9 @@ from flask import render_template
 from app import app
 from .request import get_movies,  get_movie, search_movie
 from flask import render_template, request, redirect, url_for
+from .models import review
+from .forms import ReviewForm
+Review = review.Review
 # views
 
 
@@ -44,7 +47,3 @@ def search(movie_name):
     searched_movies = search_movie(movie_name_format)
     title = f' search results for {movie_name}'
     return render_template('search.html', movies=searched_movies)
-
-
-
-    
