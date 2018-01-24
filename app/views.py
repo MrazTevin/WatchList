@@ -22,8 +22,8 @@ def index():
 def movie(movie_id):
     '''view movie function that returns view movie details
         page and it's data'''
-        
-    movie = get.movie(id)
+
+    movie = get_movie(id)
     title = f'{movie.title}'
     return render_template('movie.html', title = title, movie = movie)
 
